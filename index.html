@@ -1,68 +1,69 @@
 # 12a1
 MyLife
 <!DOCTYPE html>
-<img src="https://via.placeholder.com/150" alt="Thành viên">
-<h3>Nguyễn Văn A</h3>
-<div class="member-info">
-<p><strong>Lai lịch:</strong> Học sinh tích cực trong mọi hoạt động.</p>
-<p><strong>Tính cách:</strong> Vui vẻ, hòa đồng, luôn mang lại năng lượng tích cực.</p>
-</div>
-</div>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kỷ niệm lớp học – Thanh xuân rực rỡ</title>
 
 
-<div class="member-card" onclick="this.classList.toggle('active')">
-<img src="https://via.placeholder.com/150" alt="Thành viên">
-<h3>Trần Thị B</h3>
-<div class="member-info">
-<p><strong>Lai lịch:</strong> Học sinh chăm chỉ, học tập nghiêm túc.</p>
-<p><strong>Tính cách:</strong> Dịu dàng, tinh tế, luôn quan tâm đến bạn bè.</p>
-</div>
-</div>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 
-</div>
-</section>
-
-
-<!-- PHẦN 3 -->
-<section>
-<h2>Giá trị của một tập thể</h2>
-<div class="divider"></div>
-<p class="final">
-Một lớp học trở nên đáng quý không chỉ vì thành tích, mà bởi những con người
-đã cùng nhau tạo nên nó. Có những người bạn luôn kề vai sát cánh, có cô giáo
-tận tâm dìu dắt, mỗi ngày đến trường đều là một ngày đáng trân trọng.
-<br><br>
-Chúng ta yêu quý lớp học này bởi nơi đây đã lưu giữ những năm tháng đẹp nhất
-của tuổi trẻ – những kỷ niệm mà dù đi xa đến đâu cũng không thể quên.
-</p>
-
-
-<div class="upload-box">
-<h3>📸 Ảnh kỷ niệm của lớp</h3>
-<p>Bạn có thể tải ảnh từ máy tính của mình lên để lưu giữ khoảnh khắc đáng nhớ.</p>
-<input type="file" accept="image/*" onchange="previewImage(event)">
-<div class="preview" id="preview"></div>
-</div>
-</section>
-
-
-<footer>
-<p>© 2026 · Trang web kỷ niệm lớp học</p>
-<p>Xuân mới – Thanh xuân mãi còn</p>
-</footer>
-
-
-<script>
-function previewImage(event) {
-const preview = document.getElementById('preview');
-preview.innerHTML = '';
-const img = document.createElement('img');
-img.src = URL.createObjectURL(event.target.files[0]);
-preview.appendChild(img);
+<style>
+:root {
+--red: #c81e1e;
+--gold: #facc15;
+--dark: #7f1d1d;
+--bg: #fff7ed;
+--card: #ffffff;
+--text: #1f2937;
 }
-</script>
 
 
-</body>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+
+body {
+font-family: 'Inter', sans-serif;
+background: var(--bg);
+color: var(--text);
+line-height: 1.8;
+}
+
+
+/* ===== HERO ===== */
+header {
+min-height: 100vh;
+background: linear-gradient(rgba(200,30,30,0.85), rgba(127,29,29,0.85)),
+url('https://images.unsplash.com/photo-1529070538774-1843cb3265df') center/cover;
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 40px 20px;
+position: relative;
+overflow: hidden;
+}
+
+
+header h1 {
+font-family: 'Playfair Display', serif;
+font-size: 3.2rem;
+margin-bottom: 20px;
+color: var(--gold);
+}
+
+
+header p {
+max-width: 750px;
+font-size: 1.2rem;
+opacity: 0.95;
+}
+
+
+/* Dragon decoration */
 </html>
